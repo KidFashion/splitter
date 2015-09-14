@@ -1,0 +1,11 @@
+<DProject>
+ <ProjectGuid>7e5a67dd-f2fc-4d42-a2e6-29da88613fe9</ProjectGuid>
+ <Config name="Debug">
+  <!-- default to defaults -->
+ </Config>
+ <Config name="Release">
+  </Config>
+ <Folder name="Splitter">
+  <File path="main.d" />
+ </Folder>
+</DProject>
