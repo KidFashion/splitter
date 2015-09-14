@@ -42,7 +42,7 @@ int main(string[] argv)
 int join(string outName)
 {
 	auto outFile = new File(outName,"w");
-	writeln(format("Output file %s.",infile));
+	writeln(format("Output file %s.",outFile));
 
 	int counter = 1;
 
@@ -51,7 +51,7 @@ int join(string outName)
 		auto infile = format("%s.%s",inputfile,counter++);
 		if (exists(infile))
 		{
-			writeln(format("Merging file %s (%s)...",infile,read.length));
+			writeln(format("Merging file %s...",infile));
 			auto f = new File(infile,"rb");
 			// Create a buffer with the same size of the input file.
 			auto buf = new ubyte[cast(uint)f.size()];
